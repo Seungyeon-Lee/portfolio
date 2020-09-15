@@ -1,0 +1,21 @@
+.startup-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+}
+.startup-cards-div > * {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .starup-project-image {
+    display: none;
+  }
+  .project-subtitle{
+    font-size: 16px;
+    text-align: center;
+  }
+}
