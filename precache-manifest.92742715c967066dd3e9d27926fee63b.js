@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "661c63ee01dd14886a0f8596ad7b05b2",
+    "revision": "ae401be3ca4ed16410ac3215137b4551",
     "url": "/seungyeon-lee.github.io/index.html"
   },
   {
-    "revision": "4de5d6a50b8e2040641b",
+    "revision": "fede0539c57a035d09f7",
     "url": "/seungyeon-lee.github.io/static/css/3.54df59d4.chunk.css"
   },
   {
-    "revision": "49cbc7524b2414dde7a7",
-    "url": "/seungyeon-lee.github.io/static/css/main.e1f0fd0a.chunk.css"
+    "revision": "d4d54f9748090b4015cd",
+    "url": "/seungyeon-lee.github.io/static/css/main.d86759f7.chunk.css"
   },
   {
-    "revision": "64b4b16e04069d562f96",
-    "url": "/seungyeon-lee.github.io/static/js/2.4faeaf0c.chunk.js"
+    "revision": "c60b0b5ee8d2f39dd5f0",
+    "url": "/seungyeon-lee.github.io/static/js/2.4789296c.chunk.js"
   },
   {
     "revision": "501f379103cbfcb5ff11211dd39a28a2",
-    "url": "/seungyeon-lee.github.io/static/js/2.4faeaf0c.chunk.js.LICENSE.txt"
+    "url": "/seungyeon-lee.github.io/static/js/2.4789296c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4de5d6a50b8e2040641b",
-    "url": "/seungyeon-lee.github.io/static/js/3.c0ebe2b0.chunk.js"
+    "revision": "fede0539c57a035d09f7",
+    "url": "/seungyeon-lee.github.io/static/js/3.f234b522.chunk.js"
   },
   {
-    "revision": "49cbc7524b2414dde7a7",
-    "url": "/seungyeon-lee.github.io/static/js/main.b37447a8.chunk.js"
+    "revision": "d4d54f9748090b4015cd",
+    "url": "/seungyeon-lee.github.io/static/js/main.7b71966a.chunk.js"
   },
   {
-    "revision": "1049a8381bb3da610e6a",
-    "url": "/seungyeon-lee.github.io/static/js/runtime-main.0f550fd9.js"
+    "revision": "8826ef1a2aaea4e1f1c0",
+    "url": "/seungyeon-lee.github.io/static/js/runtime-main.32d031bb.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -48,12 +48,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/seungyeon-lee.github.io/static/media/achieve2.25eb405b.png"
   },
   {
-    "revision": "7aa45ae1f62481cb16353b1d205eccff",
-    "url": "/seungyeon-lee.github.io/static/media/achieve3.7aa45ae1.png"
+    "revision": "abdceffb83607f5623bf47c4dbc05320",
+    "url": "/seungyeon-lee.github.io/static/media/achieve3.abdceffb.png"
   },
   {
     "revision": "4244d0b542fa5e405f97b649b4cedcd9",
     "url": "/seungyeon-lee.github.io/static/media/achieve4.4244d0b5.png"
+  },
+  {
+    "revision": "7aa45ae1f62481cb16353b1d205eccff",
+    "url": "/seungyeon-lee.github.io/static/media/achieve5.7aa45ae1.png"
+  },
+  {
+    "revision": "0c194f626794f2d0b3d64487f8f0b15a",
+    "url": "/seungyeon-lee.github.io/static/media/achieve6.0c194f62.png"
   },
   {
     "revision": "fc4bfa602289fde579b2d1dd1e8882a7",
