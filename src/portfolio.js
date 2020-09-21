@@ -139,6 +139,18 @@ const projectSection = {
       ]
     },
     {
+      title: "OMR Scanner",
+      date : "2019.07 ~ 2019.08",
+      subtitle: "수능 OMR 모바일 인식 및 채점 시스템 개발",
+      image: "https://github.com/Seungyeon-Lee/OMRScanner/raw/master/resources/2.png",
+      footerLink: [
+        { name: "Android" },
+        { name: "Java" },
+        { name: "OpenCV" },
+        { name: "Unity3d C#" }
+      ]
+    },
+    {
       title: "Fine Art Virtual Exhibition",
       date : "2019.11 ~ 2019.12",
       subtitle: "르네 마그리트의 작품을 3D 모델링하여 만든 모바일 용 VR과 PC용 VR.",
@@ -249,15 +261,25 @@ const achievements = {
       date : "2017.11.28"
     },
     {
-      title : "ICT 학점연계 인턴십 수료증",
+      title : "교내 SW경시대회 입상",
       image: require("./assets/images/achieve3.png"),
-      date : "2018.3.9"
+      date : "2017.11.28"
     },
     {
       title : "좋은강의 추천 UCC 공모전 우수상",
       image: require("./assets/images/achieve4.png"),
       date : "2017.12.29"
-    }
+    },
+    {
+      title : "ICT 학점연계 인턴십 수료증",
+      image: require("./assets/images/achieve5.png"),
+      date : "2018.3.9"
+    },
+    {
+      title : "제4회 SW연계전공 융합 프로젝트 발표회 입상",
+      image: require("./assets/images/achieve6.png"),
+      date : "2019.12.4"
+    },
   ]
 };
 

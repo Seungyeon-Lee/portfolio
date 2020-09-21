@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <Fade bottom duration={1000} distance="5px">
     <div className="footer-div">
-      <p className="footer-text">Updated 2020. 9. 14</p>
+      <p className="footer-text">Updated 2020. 9. 21</p>
     </div>
     </Fade>
   );
