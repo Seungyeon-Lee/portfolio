@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae401be3ca4ed16410ac3215137b4551",
+    "revision": "34fa3aceaaf3fd0ff0b3b7b46e0d9643",
     "url": "/seungyeon-lee.github.io/index.html"
   },
   {
-    "revision": "fede0539c57a035d09f7",
+    "revision": "fda0f7052ba6cd90b276",
     "url": "/seungyeon-lee.github.io/static/css/3.54df59d4.chunk.css"
   },
   {
-    "revision": "d4d54f9748090b4015cd",
+    "revision": "f2f5a3548a6f96b5adfe",
     "url": "/seungyeon-lee.github.io/static/css/main.d86759f7.chunk.css"
   },
   {
-    "revision": "c60b0b5ee8d2f39dd5f0",
-    "url": "/seungyeon-lee.github.io/static/js/2.4789296c.chunk.js"
+    "revision": "20306cca4f7473fae953",
+    "url": "/seungyeon-lee.github.io/static/js/2.f23b8152.chunk.js"
   },
   {
     "revision": "501f379103cbfcb5ff11211dd39a28a2",
-    "url": "/seungyeon-lee.github.io/static/js/2.4789296c.chunk.js.LICENSE.txt"
+    "url": "/seungyeon-lee.github.io/static/js/2.f23b8152.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fede0539c57a035d09f7",
-    "url": "/seungyeon-lee.github.io/static/js/3.f234b522.chunk.js"
+    "revision": "fda0f7052ba6cd90b276",
+    "url": "/seungyeon-lee.github.io/static/js/3.e88f07cc.chunk.js"
   },
   {
-    "revision": "d4d54f9748090b4015cd",
-    "url": "/seungyeon-lee.github.io/static/js/main.7b71966a.chunk.js"
+    "revision": "f2f5a3548a6f96b5adfe",
+    "url": "/seungyeon-lee.github.io/static/js/main.cba1bb3f.chunk.js"
   },
   {
-    "revision": "8826ef1a2aaea4e1f1c0",
-    "url": "/seungyeon-lee.github.io/static/js/runtime-main.32d031bb.js"
+    "revision": "d69b14c4ab740b45113a",
+    "url": "/seungyeon-lee.github.io/static/js/runtime-main.bd90113e.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0c194f626794f2d0b3d64487f8f0b15a",
     "url": "/seungyeon-lee.github.io/static/media/achieve6.0c194f62.png"
+  },
+  {
+    "revision": "1f2c502fedf296b98f32d0a93190b32c",
+    "url": "/seungyeon-lee.github.io/static/media/agaworld.1f2c502f.png"
   },
   {
     "revision": "fc4bfa602289fde579b2d1dd1e8882a7",
