@@ -10,7 +10,7 @@ const greeting = {
   username: "Seungyeon Lee",
   title: "LEE SEUNG-YEON",
   subTitle: emoji("1 년 차 주니어 개발자로 Java, Swift, Unity C#, OpenCV, Git 등의 기술을 사용하여 프로덕션 서비스 프로젝트에 참여한 경험이 있습니다. 이 경험을 바탕으로 기존에 작성 되어있던 코드를 이해하고 팀원들 간의 체계를 신속 정확하게 배울 수 있는 역량을 성장시켜 왔습니다. 이 역량을 발전시킬 수 있도록 처음 마주하는 일이라도 두려워하지 않고 도전하겠습니다."),
-  resumeLink: "https://drive.google.com/file/d/1I1LrgXdike4jN5m3esKYZ0hxuLEfp8Sv/view?usp=sharing"
+  resumeLink: "https://drive.google.com/file/d/1huxOnh_1Ux4dH3tGmfPD0CCq2X5BuMHP/view?usp=sharing"
 };
 
 // Your Social Media Link
@@ -226,7 +226,7 @@ const projectSection = {
       title: "아가월드 스마트클래스",
       date : "2018.3 ~ 2018.6",
       subtitle: "유치원에서 아이들과 함깨 사용할 수 있는 디지털 교과서. 5세 인터렉션 게임 12종 개발 참여.",
-      image: "http://swink.co.kr/swink/img/portfolio/app/4%EA%B5%90%EC%9C%A1%EC%9A%A9%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20(AR%C2%B7VR)_3~5%EC%84%B8%20%EB%88%84%EB%A6%AC%EA%B3%BC%EC%A0%95%20%EA%B5%90%EC%9C%A1%20%ED%94%8C%EB%9E%AB%ED%8F%BC.png",
+      image: require("./assets/images/agaworld.png"),
       footerLink: [
         { name: "AR / VR" },
         { name: "Unity3d C#" }
