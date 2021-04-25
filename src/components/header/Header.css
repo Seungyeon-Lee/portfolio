@@ -1,5 +1,18 @@
 /* header */
 
+.dark-menu {
+  background-color: #171c28 !important;
+  color: white;
+}
+
+.dark-menu li a {
+  color: white !important;
+}
+
+.dark-menu li a:hover {
+  background-color: #0020a3 !important;
+}
+
 .header {
   background-color: #fff;
   max-width: 100%;
@@ -19,7 +32,7 @@
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 15px 20px;
   color: black;
   text-decoration: none;
 }
@@ -41,6 +54,16 @@
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
+  color: #001a85;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
+}
+
+.header .dark-logo-name {
+  font-family: "Agustina Regular";
+  font-weight: bold;
+  color: #fff;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
@@ -85,6 +108,17 @@
   width: 100%;
 }
 
+.header .menu-icon .navicon-dark:before,
+.header .menu-icon .navicon-dark:after {
+  background: white !important;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
 .header .menu-icon .navicon:before {
   top: 5px;
 }
@@ -100,7 +134,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 370px;
+  max-height: 486px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
