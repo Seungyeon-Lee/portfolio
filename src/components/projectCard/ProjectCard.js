@@ -2,11 +2,6 @@ import React from "react";
 import "./ProjectCard.css";
 
 export default function ProjectCard({cardInfo}) {
-  function openUrlInNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   return (
     <div className="certificate-card">
       <div className="certificate-image-div">
@@ -19,7 +14,7 @@ export default function ProjectCard({cardInfo}) {
       </div>
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
-            return <span class="certificate-tag">{v.name}</span>;
+            return <span className="certificate-tag" key={i}>{v.name}</span>;
         })}
       </div>
     </div>
