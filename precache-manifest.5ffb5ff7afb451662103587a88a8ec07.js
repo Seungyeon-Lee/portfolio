@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8c6cfd8c99a80e92dada517992e832e",
+    "revision": "98d01c442a6eb986c2dc290e4fb60bac",
     "url": "/seungyeon-lee.github.io/index.html"
   },
   {
