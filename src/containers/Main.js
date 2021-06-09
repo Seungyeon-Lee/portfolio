@@ -5,13 +5,13 @@ import Skills from "./skills/Skills";
 import WorkExperience from "./workExperience/WorkExperience";
 import Github from "./github/Github";
 import Projects from "./projects/Projects";
-import Achievement from "./achievements/Achievement";
+import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import Top from "./topbutton/Top";
 import {StyleProvider} from "../contexts/StyleContext";
-import "./Main.css";
+import "./Main.scss";
 import Profile from "./profile/Profile";
 
 export default class Main extends Component {

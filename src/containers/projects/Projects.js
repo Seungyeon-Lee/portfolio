@@ -1,57 +1,41 @@
 import React, {useContext} from "react";
-import "./Projects.css";
-import { projectSection } from "../../portfolio";
+import "./Projects.scss";
+import ProjectCard from "../../components/achievementCard/AchievementCard";
+import {projectSection, workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import ProjectCard from "../../components/projectCard/ProjectCard";
-export default function Achievement() {
+
+export default function WorkExperience() {
   const {isDark} = useContext(StyleContext);
-  if (!projectSection.display) {
-    return null;
-  }
-  return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="projects">
-        <div className="achievement-main-div">
-          <div className="achievement-header">
-            <h1
-              className={
-                isDark
-                  ? "dark-mode heading achievement-heading"
-                  : "heading achievement-heading"
-              }
-            >
-              {projectSection.title}
-            </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle achievement-subtitle"
-                  : "subTitle achievement-subtitle"
-              }
-            >
-              {projectSection.subtitle}
-            </p>
+  if (projectSection.display) {
+    return (
+      <div id="projects">
+        <Fade bottom duration={1000} distance="20px">
+          <div className="achievement-container" id="projectSection">
+            <div>
+              <h1 className="achievement-heading">Experiences</h1>
+              <div className="achievement-cards-div">
+                {projectSection.projectCards.map((card, i) => {
+                  return (
+                    <ProjectCard
+                      key={i}
+                      isDark={isDark}
+                      cardInfo={{
+                        title: card.title,
+                        description: card.subtitle,
+                        date : card.date,
+                        image: card.image,
+                        footer: card.footerLink
+                      }}
+                    />
+                  );
+                })}
+              </div>
+            </div>
           </div>
-          <div className="achievement-cards-div">
-            {projectSection.projectCards.map((card, i) => {
-              return (
-                <ProjectCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
-                    date : card.date,
-                    image: card.image,
-                    footer: card.footerLink
-                  }}
-                />
-              );
-            })}
-          </div>
-        </div>
+        </Fade>
       </div>
-    </Fade>
-  );
+    );
+  }
+  return null;
 }
