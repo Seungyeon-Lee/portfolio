@@ -7,53 +7,67 @@
 }
 .card-title {
   color: $titleColor;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 22px;
+  line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
-.card-subtitle {
+.card-date {
   color: $cardSubtitle;
   font-size: 14px;
   line-height: 1.5rem;
 }
-.certificate-card {
+.card-subtitle {
+  color: $cardSubtitle;
+  font-size: 17px;
+  line-height: 1.5rem;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
   background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  justify-content: center;
+}
+.project-card-light {
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.certificate-detail-div {
+
+.project-card-dark {
+  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.25s ease;
+}
+
+.project-detail {
   text-align: center;
 }
-.certificate-card:hover {
+.project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
-.dark-mode.certificate-card:hover {
-  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+.project-card-dark:hover {
+  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
-.certificate-image-div {
+.project-image {
   position: relative;
   height: 250px;
   overflow: hidden;
   text-align: center;
 }
-.achievement-cards-div {
+
+.projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
 }
-.certificate-card-footer {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.certificate-card-footer span.certificate-tag {
+
+.project-card-footer span.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
   vertical-align: middle;
@@ -70,6 +84,10 @@
   cursor: pointer;
   transition: 0.2s ease-in;
 }
-span.certificate-tag:hover {
-  background: $buttonHover;
+
+@media (max-width: 768px) {
+  .project-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
 }

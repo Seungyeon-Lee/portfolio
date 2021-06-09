@@ -1,41 +1,70 @@
-import React, {useContext} from "react";
-import "./Projects.scss";
-import ProjectCard from "../../components/achievementCard/AchievementCard";
-import {projectSection, workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
+import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
+import "./Project.scss";
+import Button from "../../components/button/Button";
+import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-
-export default function WorkExperience() {
+import Loading from "../../containers/loading/Loading";
+export default function Projects() {
+  const GithubRepoCard = lazy(() =>
+    import("../../components/githubRepoCard/GithubRepoCard")
+  );
+  const FailedLoading = () => null;
+  const renderLoader = () => <Loading />;
+  const [repo, setrepo] = useState([]);
+  // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
-  if (projectSection.display) {
-    return (
-      <div id="projects">
-        <Fade bottom duration={1000} distance="20px">
-          <div className="achievement-container" id="projectSection">
-            <div>
-              <h1 className="achievement-heading">Experiences</h1>
-              <div className="achievement-cards-div">
-                {projectSection.projectCards.map((card, i) => {
-                  return (
-                    <ProjectCard
-                      key={i}
-                      isDark={isDark}
-                      cardInfo={{
-                        title: card.title,
-                        description: card.subtitle,
-                        date : card.date,
-                        image: card.image,
-                        footer: card.footerLink
-                      }}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </Fade>
-      </div>
-    );
+
+  useEffect(() => {
+    const getRepoData = () => {
+      fetch("/profile.json")
+        .then(result => {
+          if (result.ok) {
+            return result.json();
+          }
+          throw result;
+        })
+        .then(response => {
+          setrepoFunction(response.data.user.pinnedItems.edges);
+        })
+        .catch(function (error) {
+          console.log(error);
+          setrepoFunction("Error");
+          console.log(
+            "Because of this Error, nothing is shown in place of Projects section. Projects section not configured"
+          );
+        });
+    };
+    getRepoData();
+  }, []);
+
+  function setrepoFunction(array) {
+    setrepo(array);
   }
-  return null;
+  if (
+    !(typeof repo === "string" || repo instanceof String) &&
+    openSource.display
+  ) {
+    return (
+      <Suspense fallback={renderLoader()}>
+        <div className="main" id="opensource">
+          <h1 className="project-title">Open Source Projects</h1>
+          <div className="repo-cards-div-main">
+            {repo.map((v, i) => {
+              return (
+                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+              );
+            })}
+          </div>
+          <Button
+            text={"More Projects"}
+            className="project-button"
+            href={socialMediaLinks.github}
+            newTab={true}
+          />
+        </div>
+      </Suspense>
+    );
+  } else {
+    return <FailedLoading />;
+  }
 }

@@ -5,7 +5,7 @@
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: false // set to false to use static SVG
 };
 
 const greeting = {
@@ -131,17 +131,22 @@ const workExperiences = {
 
 // Some projects you have worked on
 
-const projectSection = {
-  display: true,
-  title: emoji("Projects"),
-  subtitle: "지금까지 참여한 실무 프로젝트와 개인 프로젝트의 개요입니다.",
+const openSource = {
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
+};
 
-  projectCards: [
+// Some big projects you have worked on
+
+const bigProjects = {
+  title: "Projects",
+  subtitle: "지금까지 참여한 실무 프로젝트와 개인 프로젝트의 개요입니다.",
+  projects: [
     {
-      title: "Shopping mall",
-      date : "2019.12 ~ 2020.02",
-      subtitle: "쇼핑몰 관리자 페이지 개발",
-      image: require("./assets/images/heartravel.png"),
+      projectName: "Shopping mall",
+      projectDate : "2019.12 ~ 2020.02",
+      projectDesc: "쇼핑몰 관리자 페이지 개발",
+      image: require("./assets/images/shopingmall.png"),
       footerLink: [
         { name: "vue.js" },
         { name: "node.js" },
@@ -149,9 +154,9 @@ const projectSection = {
       ]
     },
     {
-      title: "OMR Scanner",
-      date : "2019.07 ~ 2019.08",
-      subtitle: "수능 OMR 모바일 인식 및 채점 시스템 개발",
+      projectName: "OMR Scanner",
+      projectDate : "2019.07 ~ 2019.08",
+      projectDesc: "수능 OMR 모바일 인식 및 채점 시스템 개발",
       image: "https://github.com/Seungyeon-Lee/OMRScanner/raw/master/resources/2.png",
       footerLink: [
         { name: "Android" },
@@ -161,9 +166,9 @@ const projectSection = {
       ]
     },
     {
-      title: "Fine Art Virtual Exhibition",
-      date : "2019.11 ~ 2019.12",
-      subtitle: "르네 마그리트의 작품을 3D 모델링하여 만든 모바일 용 VR과 PC용 VR.",
+      projectName: "Fine Art Virtual Exhibition",
+      projectDate : "2019.11 ~ 2019.12",
+      projectDesc: "르네 마그리트의 작품을 3D 모델링하여 만든 모바일 용 VR과 PC용 VR.",
       image: "https://github.com/ameliacode/Fine-Art-Virtual-Exhibition/raw/master/Samples/2.png",
       footerLink: [
         { name: "VR" },
@@ -173,9 +178,9 @@ const projectSection = {
       ]
     },
     {
-      title: "도형 (SHAPES)",
-      subtitle: "인게임 화면의 칠교 모양을 맞춰나가며 다양한 도형을 배우는 300여 개 스테이지의 칠교 게임.",
-      date : "2018.8 ~ 2019.8",
+      projectName: "도형 (SHAPES)",
+      projectDate: "2018.8 ~ 2019.8",
+      projectDesc : "인게임 화면의 칠교 모양을 맞춰나가며 다양한 도형을 배우는 300여 개 스테이지의 칠교 게임.",
       image: require("./assets/images/tangram.png"),
       footerLink: [
         { name: "팩토슐레 lv.3" },
@@ -185,9 +190,9 @@ const projectSection = {
       ]
     },
     {
-      title: "측정 (MEASUREMENT)",
-      date : "2018.8 ~ 2019.8",
-      subtitle: "인게임 화면에 표시된 시각을 맞추며 시간의 개념을 배워나가는 시계 게임.",
+      projectName: "측정 (MEASUREMENT)",
+      projectDate : "2018.8 ~ 2019.8",
+      projectDesc: "인게임 화면에 표시된 시각을 맞추며 시간의 개념을 배워나가는 시계 게임.",
       image: require("./assets/images/clock.png"),
       footerLink: [
         { name: "팩토슐레 lv.3" },
@@ -197,9 +202,9 @@ const projectSection = {
       ]
     },
     {
-      title: "수 (NUMBERS)",
-      date : "2018.8 ~ 2019.8",
-      subtitle: "1부터 50까지 수를 배워나가는 수 게임.",
+      projectName: "수 (NUMBERS)",
+      projectDate : "2018.8 ~ 2019.8",
+      projectDesc: "1부터 50까지 수를 배워나가는 수 게임.",
       image: require("./assets/images/number.png"),
       footerLink: [
         { name: "팩토슐레 lv.3" },
@@ -209,9 +214,9 @@ const projectSection = {
       ]
     },
     {
-      title: "규칙 (PATTERNS)",
-      date : "2018.8 ~ 2019.8",
-      subtitle: "다양한 규칙을 찾아내고, 발견해나가는 규칙 게임",
+      projectName: "규칙 (PATTERNS)",
+      projectDate : "2018.8 ~ 2019.8",
+      projectDesc: "다양한 규칙을 찾아내고, 발견해나가는 규칙 게임",
       image: require("./assets/images/shape.png"),
       footerLink: [
         { name: "팩토슐레 lv.3" },
@@ -221,9 +226,9 @@ const projectSection = {
       ]
     },
     {
-      title: "톡강 Android, iOS",
-      date : "2018.7 ~ 2019.8",
-      subtitle: "실시간으로 강사와 학생이 소통할 수 있는 스트리밍 강의 플랫폼.",
+      projectName: "톡강 Android, iOS",
+      projectDate : "2018.7 ~ 2019.8",
+      projectDesc: "실시간으로 강사와 학생이 소통할 수 있는 스트리밍 강의 플랫폼.",
       image: require("./assets/images/tk.png"),
       footerLink:  [
         { name: "Android" },
@@ -233,9 +238,9 @@ const projectSection = {
       ]
     },
     {
-      title: "아가월드 스마트클래스",
-      date : "2018.3 ~ 2018.6",
-      subtitle: "유치원에서 아이들과 함깨 사용할 수 있는 디지털 교과서. 5세 인터렉션 게임 12종 개발 참여.",
+      projectName: "아가월드 스마트클래스",
+      projectDate : "2018.3 ~ 2018.6",
+      projectDesc: "유치원에서 아이들과 함깨 사용할 수 있는 디지털 교과서. 5세 인터렉션 게임 12종 개발 참여.",
       image: require("./assets/images/agaworld.png"),
       footerLink: [
         { name: "AR / VR" },
@@ -243,9 +248,9 @@ const projectSection = {
       ]
     },
     {
-      title: "3D Pacman",
-      date : "2017.3 ~ 2017.6",
-      subtitle: "기존 2D 오픈 소스 프로젝트를 기반으로 3D 팩맨 게임으로 업데이트",
+      projectName: "3D Pacman",
+      projectDate : "2017.3 ~ 2017.6",
+      projectDesc: "기존 2D 오픈 소스 프로젝트를 기반으로 3D 팩맨 게임으로 업데이트",
       image: "https://camo.githubusercontent.com/95c24ca2225945bdc58de41f64eba17f414eb844/687474703a2f2f706f737466696c6573382e6e617665722e6e65742f4d6a41784e7a41324d4452664d5445332f4d4441784e446b324e5451324d5463324e6a51342e67586149464b2d794333724d66525444795f34335a50334b62724b54537871464a4a3574624e7931744538672e386f47373354396149514d546c484954676d4c48704c715154554b6334734f5162724e587930707a664838672e4749462e656b6475643031342f73696e756c2e6769663f747970653d7732",
       footerLink: [
         { name: "3D" },
@@ -253,15 +258,7 @@ const projectSection = {
         { name: "C++" }
       ]
     }
-  ]
-};
-
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -271,32 +268,33 @@ const openSource = {
 const achievementSection = {
   title: "Achievements 🏆",
   subtitle: "현재까지 받은 수상 내역입니다.",
-  projects: [
-      {
-        title : "교내 C 프로젝트 경진대회 금상",
-        image: require("./assets/images/achieve1.png"),
-        date : "2016.3.9"
-      },
-      {
-        title : "교내 SW경시대회 입상",
-        image: require("./assets/images/achieve2.png"),
-        date : "2017.11.28"
-      },
-      {
-        title : "좋은강의 추천 UCC 공모전 우수상",
-        image: require("./assets/images/achieve4.png"),
-        date : "2017.12.29"
-      },
-      {
-        title : "ICT 학점연계 인턴십 수료증",
-        image: require("./assets/images/achieve5.png"),
-        date : "2018.3.9"
-      },
-      {
-        title : "제4회 SW연계전공 융합 프로젝트 발표회 입상",
-        image: require("./assets/images/achieve6.png"),
-        date : "2019.12.4"
-      },
+
+  achievementsCards: [
+    {
+      title : "교내 C 프로젝트 경진대회 금상",
+      image: require("./assets/images/achieve1.png"),
+      subtitle : "2016.3.9"
+    },
+    {
+      title : "교내 SW경시대회 입상",
+      image: require("./assets/images/achieve2.png"),
+      subtitle : "2017.11.28"
+    },
+    {
+      title : "좋은강의 추천 UCC 공모전 우수상",
+      image: require("./assets/images/achieve4.png"),
+      subtitle : "2017.12.29"
+    },
+    {
+      title : "ICT 학점연계 인턴십 수료증",
+      image: require("./assets/images/achieve5.png"),
+      subtitle : "2018.3.9"
+    },
+    {
+      title : "제4회 SW연계전공 융합 프로젝트 발표회 입상",
+      image: require("./assets/images/achieve6.png"),
+      subtitle : "2019.12.4"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -336,7 +334,7 @@ export {
   educationInfo,
   workExperiences,
   openSource,
-  projectSection,
+  bigProjects,
   achievementSection,
   blogSection,
   contactInfo,
